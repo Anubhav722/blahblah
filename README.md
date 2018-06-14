@@ -1,7 +1,7 @@
 
-# Resume Parser
+# cautious-octo-scanner
 
-Resume Parser is a Django app that extracts Basic and Github/StackOverflow/Linkedin details of a user from files like .pdf, .doc, .docx.
+Cautious Octo Scanner is a Django app that extracts Basic and Github/StackOverflow/Linkedin details of a user from files like .pdf, .doc, .docx.
 
 ## Installation
 
@@ -169,4 +169,5 @@ jarvis: Main django module consists of all the django apps. It also has `setting
 Open `build/html/index.html` to start navigating the docs.
 
 # potential-scanner
+
 
