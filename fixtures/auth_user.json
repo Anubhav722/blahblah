@@ -1,0 +1,20 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$24000$D1wLIs1ZCOuA$naekLUG/w4KcZAQnEG5ZSdy05GEQrEDBtrwOUSHIcLA=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "yaman",
+        "first_name": "",
+        "last_name": "",
+        "email": "yaman@outlook.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-03-22T10:28:12.397Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Resume</title>
+    <!-- Google web fonts -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel='stylesheet' />
+    <!-- The main CSS file -->
+    <link href="../static/css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+      <form id="upload" action='.' method="post" enctype="multipart/form-data"> {% csrf_token %}
+          <a style="color: #ffffff">This field is required.</a>
+          <ul style="padding: 15px 30px; ">
+                <a style="color:#ffffff">{{ form.file }}</a>
+                <p style="margin-bottom: 2em"></p>
+                <a style="color:#ffffff">Comma Separated Skills: {{ form.skills }}</a>
+          </ul>
+          <div id="drop">
+
+              <button type="submit" style="margin-top: 10px; font-size:14px; border-radius:2px; padding:12px 26px;">Upload</button>
+          </div>
+
+      </form>
+
+</body>
+</html>
+
+
+
+

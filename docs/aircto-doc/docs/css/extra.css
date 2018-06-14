@@ -1,0 +1,11 @@
+.md-typeset code {
+  color: #e91e63;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #009688;
+}
+
+.md-footer-copyright {
+  display: none;
+}

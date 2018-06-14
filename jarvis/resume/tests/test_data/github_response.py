@@ -1,0 +1,23 @@
+import datetime
+
+github_response = {'account_created_at': datetime.datetime(2015, 4, 27, 23, 26, 41),
+                   'blog_url': 'http://yamanahlawat.org',
+                   'company': None,
+                   'email': 'yaman@outlook.com',
+                   'followers': 0,
+                   'following': 3,
+                   'gists_url': 'https://api.github.com/users/yamanahlawat/gists',
+                   'hireable': True,
+                   'last_modified': datetime.datetime(2017, 2, 27, 7, 51, 16),
+                   'last_updated_at': datetime.datetime(2017, 2, 27, 7, 51, 16),
+                   'location': None,
+                   'owned_private_repos': 0,
+                   'private_gists': 0,
+                   'profile_image_url': 'https://avatars3.githubusercontent.com/u/12144602?v=3',
+                   'profile_name': 'Yaman Ahlawat',
+                   'profile_url': 'https://github.com/yamanahlawat',
+                   'public_gists': 2,
+                   'public_repos': 10,
+                   'total_private_repos': 0,
+                   'user_id': 12144602,
+                   'user_name': 'yamanahlawat'}

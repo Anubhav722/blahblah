@@ -1,0 +1,63 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+"beautifulsoup4" = "*"
+"psycopg2" = "*"
+celery = "*"
+django = "==1.9.3"
+django-autoslug = "*"
+django-cors-headers = "*"
+django-extensions = "*"
+django-filter = "*"
+django-model-utils = "*"
+django-ratelimit = "*"
+django-rest-swagger = "*"
+django-storages = "*"
+djangorestframework = "==3.7.3"
+drfdocs = "*"
+feedparser = "*"
+flanker = "*"
+gensim = "*"
+pandas = "*"
+pillow = "*"
+py-stackexchange = "*"
+pygithub = "*"
+pygments = "*"
+pyocr = "*"
+scipy = "*"
+seolib = "*"
+sklearn = "*"
+spacy = "*"
+sumy = "*"
+tika = "*"
+tldextract = "*"
+unidecode = "*"
+wand = "*"
+ipaddress = "*"
+"enum34" = "*"
+boto = "==2.46.1"
+google-compute-engine = "*"
+fuzzywuzzy = "*"
+futures = "*"
+simhash = "==1.8.0"
+python-levenshtein = "*"
+ipdb = "*"
+
+
+[dev-packages]
+
+neovim = "*"
+ipython = "*"
+ipdb = "*"
+"autopep8" = "*"
+
+
+[requires]
+
+python_version = "2.7"

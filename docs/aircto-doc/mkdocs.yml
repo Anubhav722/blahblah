@@ -1,0 +1,46 @@
+
+# Project information
+site_name: 'Filters API'
+site_author: 'Aircto'
+
+pages:
+    - Welcome to Filter API Documentation: 'index.md'
+    - How It Works!: 'how-it-works.md'
+    - API Guide:
+        - Accounts API: 'api-guide/accounts-api.md'
+        - Resume API: 'api-guide/resume-api.md'
+
+# Documentation and Theme
+theme: 'material'
+
+# Options
+extra:
+  logo: 'images/aircto-logo.jpg'
+  palette:
+    primary: 'red'
+    accent: 'light blue'
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+  social:
+    - type: 'medium'
+      link: 'https://medium.com/@aircto'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/airctohq/'
+    - type: 'twitter'
+      link: 'https://twitter.com/aircto'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/company/aircto'
+    - type: 'github'
+      link: 'https://github.com/Aircto'
+    - type: 'quora'
+      link: 'https://aircto.quora.com/'
+    - type: 'reddit'
+      link: 'https://www.reddit.com/domain/aircto.com/'
+
+# Extensions
+markdown_extensions:
+  - admonition
+
+# Extra CSS
+extra_css: [css/extra.css]

@@ -1,0 +1,39 @@
+* Resume Extraction
+  Resume extraction in filter-api is done in two ways. Quick extraction (Synchronously) and Deep extraction(Asynchronously via tasks)
+  Following are the total information we are extracting from the resume currently
+* Extracting plain text
+    - We use tika server. https://github.com/chrismattmann/tika-python
+    - used to extract doc, docx and pdf
+    - We use ocr to extract plain content from "image-based" resumes. https://pypi.python.org/pypi/pytesseract
+* Basic Information
+  We use thrid party repo to extract basic details of the candidate from the resume. https://github.com/antonydeepak/ResumeParser
+    - FirstName
+    - LastName
+    - Email
+    - Contact Number
+* URLs
+  Extracted based on regexp. We also categorize the URLs
+  - URL is categorized based on known list present in `resume/utils/url_list.py`
+  - Every URL would fall in any of the following categories
+    - Contribution
+    - Coding
+    - Blog
+    - Forums
+    - Social
+    - Apps
+    - Others/Misc
+* Locations(city or state)
+  We extract current locations of the candidate by following patterns. These pattern includes, splitting the resume to different sections base on the headings. All the headings we are using to split are available at `resume/utils/machine_learning/constants.py`
+  - Following are the steps
+    - split the resumes into different sections
+    - match if there exists any locations that match with locations in the database (loaded via fixtures)
+* Companies
+  Companies are basically list of companies that candidate worked with (both past and present). We follow simple technique for company extraction
+  we check if there is any match between companies available in the database(loaded via fixtures) with the plain resume content.
+NOTE: If any company present in the resume doesn't contain in the database, it wouldn't be considered.
+* Institutions
+  This is exactly same as companies extraction
+* Total Years of Experience
+  - Years of Experience (YOE) is basically the total years of experience the candidate may mentioned in the resumes.
+  - We split the resume into different sections based on title (`resume/utils/machine_learning/constants.py`) and we try to find YOE based on some common regexp patterns
+  - YOE will be None if either resume doesn't contain (in case of fresher's resume or parser failed to extract)
