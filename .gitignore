@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # OS X
 .DS_Store
@@ -60,6 +61,8 @@ build/
 .env-*
 jarvis/media/
 
+=======
+>>>>>>> b81aef54bd4bb1971397cb3ec77b469871bc3265
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -164,4 +167,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+<<<<<<< HEAD
 
+=======
+>>>>>>> b81aef54bd4bb1971397cb3ec77b469871bc3265

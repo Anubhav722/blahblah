@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # cautious-octo-scanner
 
@@ -171,3 +172,6 @@ Open `build/html/index.html` to start navigating the docs.
 # potential-scanner
 
 
+=======
+# blahblah
+>>>>>>> b81aef54bd4bb1971397cb3ec77b469871bc3265
